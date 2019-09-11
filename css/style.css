@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body
+{
+  margin:0px; padding:0px;
+}
+
+ul, li
+{
+  list-style:none; padding:0px; margin:0px;
+}
+
+img
+{
+  display:block; max-width:100%;
+}
+
+.slide-wrapper
+{
+ overflow: hidden;
+}
+.slide
+{
+  display:flex;
+}
+.slide li
+{
+ flex-shrink:0; width:80vw; max-width:800px;
+ transition:.4s; border-radius:4px;  overflow:hidden; box-shadow:0 2px 4px rgba(0, 0, 0, .4);
+ margin:0 20px;
+}
