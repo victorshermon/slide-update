@@ -3,6 +3,7 @@ export default class Slide {
   constructor(slide, wrapper) {
     this.slide = document.querySelector(slide);
     this.wrapper = document.querySelector(wrapper);
+    this.dist = {finalPostion:0, startX:0, movement:0}
   }
 
   onStart(event) {
@@ -31,6 +32,7 @@ export default class Slide {
   init() {
     this.bindStart();
     this.addSlideEventos();
+    return this;
   }
 
 }
